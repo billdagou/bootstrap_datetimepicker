@@ -4,6 +4,8 @@ EXT:bootstrap_datetimepicker allows you to use [Bootstrap Datetimepicker](http:/
 
 The extension version only matches the Bootstrap Datetimepicker library version, it doesn't mean anything else.
 
+**NOTE: the local library is updated to be compatible with Bootstrap 4 and Font Awesome 5.**
+
 ## How to use it
 
 You can load the library in your Fluid template with **LoadViewHelper**.
