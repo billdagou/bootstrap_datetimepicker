@@ -1,25 +1,23 @@
 # TYPO3 Extension: Bootstrap Datetimepicker
 
-EXT:bootstrap_datetimepicker allows you to use [Bootstrap Datetimepicker](http://eonasdan.github.io/bootstrap-datetimepicker/) in your extensions.
+EXT:bootstrap_datetimepicker allows you to use [Bootstrap Datetimepicker](https://getdatepicker.com/) in your extensions.
 
 The extension version only matches the Bootstrap Datetimepicker library version, it doesn't mean anything else.
 
-**NOTE: the local library is updated to be compatible with Bootstrap 4 and Font Awesome 5.**
-
 ## How to use it
 
-You can load the library in your Fluid template with **LoadViewHelper**.
+You can load the library in your Fluid template.
 
-    <bsdtp:load />
+    <bsdtp:loadCss />
+    <bsdtp:loadJs />
 
 You can also load your own libraries.
 
-    <bsdtp:load js="..." />
-    
-Or, load the javascript library on top.
+    <bsdtp:loadCss href="..." />
+    <bsdtp:loadJs src="..." />
 
-    <bsdtp:load footer="false" />
-    
-To use the CDN resource, please set `$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['bootstrap_datetimepicker']['CDN']` in `ext_localconf.php` or `AdditionalConfiguration.php`.
+For more options please refer to &lt;f:asset.css&gt; and &lt;f:asset.script&gt;.
 
-    $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['bootstrap_datetimepicker']['CDN'] = \Vendor\Extension\CDN::class;
+To use other Bootstrap Datetimepicker source, you can register it in `ext_localconf.php` or `AdditionalConfiguration.php`.
+
+    \Dagou\BootstrapDatetimepicker\Utility\ExtensionUtility::registerSource(\Dagou\BootstrapDatetimepicker\Source\CDNJS::class);

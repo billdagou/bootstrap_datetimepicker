@@ -8,6 +8,18 @@ class TextfieldViewHelper extends \Dagou\Bootstrap\ViewHelpers\Form\TextfieldVie
         $this->registerArgument('format', 'string', 'Date format', FALSE, \DateTime::W3C);
     }
 
+    public function initialize() {
+        $this->arguments['data'] = array_merge([
+            'toggle' => 'datetimepicker',
+            'target' => $this->arguments['id'],
+        ], $this->arguments['data'] ?? []);
+
+        parent::initialize();
+    }
+
+    /**
+     * @return mixed
+     */
     protected function getValueAttribute() {
         $value = parent::getValueAttribute();
 
