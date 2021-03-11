@@ -20,4 +20,4 @@ For more options please refer to &lt;f:asset.css&gt; and &lt;f:asset.script&gt;.
 
 To use other Bootstrap Datetimepicker source, you can register it in `ext_localconf.php` or `AdditionalConfiguration.php`.
 
-    \Dagou\BootstrapDatetimepicker\Utility\ExtensionUtility::registerSource(\Dagou\BootstrapDatetimepicker\Source\CDNJS::class);
+    \Dagou\BootstrapDatetimepicker\Utility\ExtensionUtility::registerSource(\Dagou\BootstrapDatetimepicker\Source\CloudFlare::class);
