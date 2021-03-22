@@ -8,13 +8,13 @@ The extension version only matches the Bootstrap Datetimepicker library version,
 
 You can load the library in your Fluid template.
 
-    <bsdtp:loadCss />
-    <bsdtp:loadJs />
+    <bsdtp:css />
+    <bsdtp:js />
 
 You can also load your own libraries.
 
-    <bsdtp:loadCss href="..." />
-    <bsdtp:loadJs src="..." />
+    <bsdtp:css href="..." />
+    <bsdtp:js src="..." />
 
 For more options please refer to &lt;f:asset.css&gt; and &lt;f:asset.script&gt;.
 

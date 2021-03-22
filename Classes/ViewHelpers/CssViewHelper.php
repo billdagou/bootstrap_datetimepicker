@@ -5,9 +5,8 @@ use Dagou\BootstrapDatetimepicker\Interfaces\Source;
 use Dagou\BootstrapDatetimepicker\Source\Local;
 use Dagou\BootstrapDatetimepicker\Utility\ExtensionUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Fluid\ViewHelpers\Asset\CssViewHelper;
 
-class LoadCssViewHelper extends CssViewHelper {
+class CssViewHelper extends \TYPO3\CMS\Fluid\ViewHelpers\Asset\CssViewHelper {
     public function initializeArguments(): void {
         parent::initializeArguments();
 
