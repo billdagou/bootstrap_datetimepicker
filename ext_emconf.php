@@ -2,15 +2,14 @@
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Bootstrap Datetimepicker',
     'description' => 'Bootstrap Datetimepicker, https://getdatepicker.com/',
+    'version' => '6.2.10',
     'category' => 'misc',
-    'author' => 'Bill.Dagou',
-    'author_email' => 'billdagou@gmail.com',
-    'version' => '5.39.0',
-    'state' => 'stable',
     'constraints' => [
         'depends' => [
-            'bootstrap' => '',
-            'moment' => '',
+            'typo3' => '11.5.0-11.5.99',
         ],
     ],
+    'state' => 'stable',
+    'author' => 'Bill.Dagou',
+    'author_email' => 'billdagou@gmail.com',
 ];

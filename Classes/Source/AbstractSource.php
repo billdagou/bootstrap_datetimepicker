@@ -5,7 +5,8 @@ use Dagou\BootstrapDatetimepicker\Interfaces\Source;
 use TYPO3\CMS\Core\SingletonInterface;
 
 abstract class AbstractSource implements Source, SingletonInterface {
-    const URL = '';
+    protected const URL = '';
+    protected const VERSION = '6.2.10';
 
     /**
      * @return string
@@ -18,7 +19,7 @@ abstract class AbstractSource implements Source, SingletonInterface {
      * @return string
      */
     protected function getCssBuild(): string {
-        return 'tempusdominus-bootstrap-4.min.css';
+        return 'tempus-dominus.min.css';
     }
 
     /**
@@ -32,6 +33,6 @@ abstract class AbstractSource implements Source, SingletonInterface {
      * @return string
      */
     protected function getJsBuild(): string {
-        return 'tempusdominus-bootstrap-4.min.js';
+        return 'tempus-dominus.min.js';
     }
 }

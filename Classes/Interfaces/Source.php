@@ -2,8 +2,6 @@
 namespace Dagou\BootstrapDatetimepicker\Interfaces;
 
 interface Source {
-    const VERSION = '5.39.0';
-
     /**
      * @return string
      */
