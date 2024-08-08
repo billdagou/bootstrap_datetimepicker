@@ -1,5 +1,7 @@
 # TYPO3 Extension: Bootstrap Datetimepicker
 
+**See [Tempus Dominus](https://github.com/billdagou/tempus_dominus) instead.**
+
 EXT:bootstrap_datetimepicker allows you to use [Bootstrap Datetimepicker](https://getdatepicker.com/) in your extensions.
 
 The extension version only matches the Bootstrap Datetimepicker library version, it doesn't mean anything else.
